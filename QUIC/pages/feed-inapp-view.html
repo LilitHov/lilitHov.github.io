@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>QUIC Sent</title>
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row align-items-center header-main">
+            <div class="col-3 col-xs-2 d-none d-md-block">
+                <a href="home.html" class="logo-link">
+                    <img src="../assets/images/Quic-Icon2.png" alt="QUIC" title="QUIC" class="header-logo">
+                </a>
+                <a href="#" class="inb d-none  d-md-inline-block">Inbox</a>
+            </div>
+            <div class="col-12 col-md-5 search">
+                <form action="#">
+                    <div class="form-group">
+                        <input type="search" class="form-control search-input"  placeholder="Find something">
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-4 account">
+                <ul class="nav header-list float-right">
+                    <li class="nav-item d-md-inline-block notif ">
+                        <span class="search-icon" style="color: #F0F0F0;font-size: 20px;"><i class="fa fa-search"></i></span>
+                    </li>
+                    <li class="nav-item d-md-inline-block notif">
+                        <img src="../assets/images/icons/notification-icon.png" alt="Notification Icon">
+                    </li>
+                    <li class="nav-item d-md-inline-block share" id="tooltips">
+                        <img src="../assets/images/icons/send-icon.png" alt="Send Icon">
+                        <div class="quic-tooltip top">
+                            <div class="tooltip-head container">
+                                <div class="row align-items-center">
+                                    <div class="col-2 post active">
+                                        <span><i class="fa fa-pencil-alt"></i></span>&nbsp;
+                                        <span>Post</span>
+                                    </div>
+                                    <div class="col-2 post livestream">
+                                        <span><i class="fa fa-video"></i></span>&nbsp;
+                                        <span>Live</span>
+                                    </div>
+                                    <div class="col-8 text-right">
+                                        <span class="shedule">Time Shedule Post</span>
+                                        <span class="date-pd" data-toggle="datepicker">May 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tooltip-body container">
+                                <div class="row">
+                                    <div class="col-12 text-left">
+                                        <img src="../assets/images/avatar.png" alt="Avatar" class="profile-photo">
+                                        <label for="update-textarea"><span class="update">New update here</span></label>
+                                        <textarea rows="5" class="form-control bank-input-textarea mb-md-0 mb-2" id="update-textarea" placeholder=""></textarea>
+                                        <div class="networks d-flex flex-wrap align-items-center justify-content-end">
+											<span class="text-center d-flex flex-wrap align-items-center justify-content-center fb-bg">
+												<i class="fab fa-facebook-f"></i>
+											</span>
+                                            <span class="text-center d-flex flex-wrap align-items-center justify-content-center gp-bg">
+												<i class="fab fa-google-plus-g"></i>
+											</span>
+                                            <span class="text-center d-flex flex-wrap align-items-center justify-content-center pt-bg">
+												<i class="fab fa-pinterest-p"></i>
+											</span>
+                                            <span class="text-center d-flex flex-wrap align-items-center justify-content-center tw-bg">
+												<i class="fab fa-twitter"></i>
+											</span>
+                                            <span class="text-center d-flex flex-wrap align-items-center justify-content-center ig-bg">
+												<i class="fab fa-instagram"></i>
+											</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tooltip-footer container">
+                                <div class="row align-items-center">
+                                    <div class="col-9 text-left">
+										<span class="icon">
+											<i class="fa fa-image"></i>
+											<span>Images1.jpg</span>
+										</span>
+                                        <span class="icon"><i class="fa fa-file-alt"></i></span>
+                                        <span class="icon"><i class="fa fa-map-marker-alt"></i></span>
+                                        <span class="icon"><i class="fa fa-smile"></i></span>
+                                    </div>
+                                    <div class="col-3 text-right">
+                                        <button class="quic-button">Post</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item account">
+                        <div class="dropdown show account-setting">
+                            <a class="btn  " href="#" role="button" id="account-manage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/images/avatar.png" alt="Avatar" class="profile-photo">
+                            </a>
+                            <div class="dropdown-menu account-setting-list" aria-labelledby="account-manage">
+                                <a class="dropdown-item" href="home.html">Inbox</a>
+                                <a class="dropdown-item" href="sent-share.html">Sent</a>
+                                <a class="dropdown-item" href="quic_bot.html">QuicBot</a>
+                                <a class="dropdown-item" href="account.html">Account</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="sent-main">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 text-center">
+            <div class="back-arrow ">
+                <a href="#"><img src="../assets/images/icons/back-icon.png" alt="Back Arrow"></a>
+            </div>
+        </div>
+        <div class="col-lg-6 offset-lg-0 col-sm-10 offset-sm-1 col-10 offset-1">
+                <div class="share-content-header">
+                    <h5>Share</h5>
+                    <ul>
+                        <li><img src="../assets/images/icons/email-icon.png" alt="Email"></li>
+                        <li><img src="../assets/images/icons/comment-background-icon.png" alt="Comment"></li>
+                        <li><img src="../assets/images/icons/twitter-blue-icon.png" alt="Twitter"></li>
+                        <li><img src="../assets/images/icons/google-plus-red-icon.png" alt="Google+"></li>
+                        <li><img src="../assets/images/icons/pinterest-icon.png" alt="Pinterest"></li>
+                        <li><img src="../assets/images/icons/linkedin-icon.png" alt="Linkedin"></li>
+                    </ul>
+
+                </div>
+                <div class="share-block-body">
+        <div class="media  figure-media-body">
+            <a href="#">
+                <img class="d-flex mr-3" src="../assets/images/share-avatar-1.png" alt="Avatar">
+            </a>
+            <div class="media-body share-media-body">
+                <h5 class="mt-0">Marry T.</h5>
+                <div class="share-soc-icon show text-right">
+                    <a href="#">
+                        <img src="../assets/images/icons/twitter-blue-icon.png" alt="Twitter">
+                    </a>
+                </div>
+                <span class="publication-time">March 2 at 8:34 AM</span>
+            </div>
+        </div>
+        <figure class="figure share-figure">
+            <figcaption class="description header-figure">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    <span class="hashtag">@alexander @adams</span>
+                </p>
+                <span class="hashtag">#friends #fun #talk </span>
+            </figcaption>
+            <div class="card bg-dark">
+                <img class="card-img figure-img img-fluid" src="../assets/images/image-4.jpg" alt="ALT">
+            </div>
+            <figcaption class="figure-caption footer-figure  text-left">
+
+                <ul class="nav info-icons share-nav-list ">
+                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Love Icon"><span>24</span></a></li>
+                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment Icon"><span>543</span></a></li>
+                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View Icon"><span>850</span></a></li>
+                </ul>
+                <a class="btn  float-right" href="#" role="button" id="share-settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                </a>
+                <div class="dropdown-menu drop" aria-labelledby="share-settings">
+                    <a class="dropdown-item" href="#">Share</a>
+                    <a class="dropdown-item" href="#">Delete</a>
+                </div>
+            </figcaption>
+        </figure>
+    </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="share-cancle-block text-center">
+                <a href="#"><img src="../assets/images/icons/close-icon.png" alt="Close" class="cancle-icon"></a>
+                <a href="#" class="cancle-link">Open social network view</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</main>
+
+
+
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/quic.js"></script>
+</body>
+</html>
