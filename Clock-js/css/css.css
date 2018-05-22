@@ -1,0 +1,19 @@
+body {
+    background-image: url("../images/clock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face{
+    font-family:'Wallpoet';
+    src: url('../fonts/Wallpoet-Regular.ttf');
+}
+
+#clock {
+    width: 200px;
+    height: 200px;
+    font-size: 150px;
+    font-family: 'Wallpoet', cursive;
+    color: #aff4f7;
+    opacity: 0.7;
+}
