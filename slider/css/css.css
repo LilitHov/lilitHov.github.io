@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../photo/back.jpg") no-repeat;
+    background-size: cover;
+}
+
+#slider {
+    width: 500px;
+    height: 478px;
+    margin: 10px auto 0 auto;
+    overflow: hidden;
+}
+
+#content {
+    width: 4500px;
+    position: relative;
+    transition: all ease 1s;
+    left: 0;
+    display: table;
+}
+
+#content > img {
+    float: left;
+}
+
+.arrow-left {
+    cursor: pointer;
+    position: absolute;
+    width: 32px;
+    text-align: center;
+    height: 478px;
+    display: table;
+    font-size: 34px;
+    background-color: #E0E1E3;
+    line-height: 478px;
+    top: 3%;
+    left: 23%;
+}
+
+.arrow-right {
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    width: 32px;
+    height: 478px;
+    display: table;
+    font-size: 34px;
+    top: 3%;
+    line-height: 478px;
+    color: white;
+    background-color: #343539;
+    right: 24.5%;
+}

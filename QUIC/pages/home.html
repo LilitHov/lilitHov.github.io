@@ -1,0 +1,1848 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/datepicker.min.css">
+
+    <title>QUIC</title>
+</head>
+<body>
+<!--header-start-->
+<header>
+    <div class="container-fluid">
+        <div class="row align-items-center header-main">
+            <div class="col-3 col-xs-2 d-none d-md-block">
+                <a href="home.html" class="logo-link">
+                    <img src="../assets/images/Quic-Icon2.png" alt="QUIC" title="QUIC" class="header-logo">
+                </a>
+                <a href="#" class="inb d-none  d-md-inline-block">Inbox</a>
+            </div>
+            <div class="col-12 col-md-5 search">
+                <form action="#">
+                    <div class="form-group">
+                        <input type="search" class="form-control search-input"  placeholder="Find something">
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-4 account">
+                <ul class="nav header-list float-right">
+                    <li class="nav-item d-md-inline-block notif ">
+                        <span class="search-icon" style="color: #F0F0F0;font-size: 20px;"><i class="fa fa-search"></i></span>
+                    </li>
+                    <li class="nav-item d-md-inline-block notif">
+                        <img src="../assets/images/icons/notification-icon.png" alt="Notification Icon">
+                    </li>
+                    <li class="nav-item d-md-inline-block share" id="tooltips">
+                        <img src="../assets/images/icons/send-icon.png" alt="Send Icon">
+                        <div class="quic-tooltip top">
+                            <div class="tooltip-head container">
+                                <div class="row align-items-center">
+                                    <div class="col-2 post active">
+                                        <span><i class="fa fa-pencil-alt"></i></span>&nbsp;
+                                        <span>Post</span>
+                                    </div>
+                                    <div class="col-2 post livestream">
+                                        <span><i class="fa fa-video"></i></span>&nbsp;
+                                        <span>Live</span>
+                                    </div>
+                                    <div class="col-8 text-right">
+                                        <span class="shedule">Time Shedule Post</span>
+                                        <span class="date-pd" data-toggle="datepicker">May 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tooltip-body container">
+                                <div class="row">
+                                    <div class="col-12 text-left">
+                                        <img src="../assets/images/avatar.png" alt="Avatar" class="profile-photo">
+                                        <label for="update-textarea"><span class="update">New update here</span></label>
+                                        <textarea rows="5" class="form-control bank-input-textarea mb-md-0 mb-2" id="update-textarea" placeholder=""></textarea>
+                                        <div class="networks d-flex flex-wrap align-items-center justify-content-end">
+											<span class="text-center d-flex flex-wrap align-items-center justify-content-center fb-bg">
+												<i class="fab fa-facebook-f"></i>
+											</span>
+											<span class="text-center d-flex flex-wrap align-items-center justify-content-center gp-bg">
+												<i class="fab fa-google-plus-g"></i>
+											</span>
+											<span class="text-center d-flex flex-wrap align-items-center justify-content-center pt-bg">
+												<i class="fab fa-pinterest-p"></i>
+											</span>
+											<span class="text-center d-flex flex-wrap align-items-center justify-content-center tw-bg">
+												<i class="fab fa-twitter"></i>
+											</span>
+											<span class="text-center d-flex flex-wrap align-items-center justify-content-center ig-bg">
+												<i class="fab fa-instagram"></i>
+											</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tooltip-footer container">
+                                <div class="row align-items-center">
+                                    <div class="col-9 text-left">
+										<span class="icon">
+											<i class="fa fa-image"></i>
+											<span>Images1.jpg</span>
+										</span>
+                                        <span class="icon"><i class="fa fa-file-alt"></i></span>
+                                        <span class="icon"><i class="fa fa-map-marker-alt"></i></span>
+                                        <span class="icon"><i class="fa fa-smile"></i></span>
+                                    </div>
+                                    <div class="col-3 text-right">
+                                        <button class="quic-button">Post</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item account">
+                        <div class="dropdown show account-setting">
+                            <a class="btn  " href="#" role="button" id="account-manage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/images/avatar.png" alt="Avatar" class="profile-photo">
+                            </a>
+                            <div class="dropdown-menu account-setting-list" aria-labelledby="account-manage">
+                                <a class="dropdown-item" href="home.html">Inbox</a>
+                                <a class="dropdown-item" href="sent-share.html">Sent</a>
+                                <a class="dropdown-item" href="quic_bot.html">QuicBot</a>
+                                <a class="dropdown-item" href="account.html">Account</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header><!--header end-->
+<!--main-->
+<div class="container-fluid content">
+    <main class="home-main">
+        <div class="row align-items-center major-menu-row">
+            <!--nav-part-->
+            <div class="col-12 ">
+                <nav class="site-navigation  d-md-block">
+                    <ul class="nav nav-list d-inline-flex" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link show active" href="#nav-all-block" role="tab" data-toggle="tab" id="all-tab">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nav-text-block" role="tab" data-toggle="tab" id="text-tab">Text</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nav-live-block" role="tab" data-toggle="tab" id="live-tab">Live</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nav-images-block" role="tab" data-toggle="tab" id="images-tab">Images</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nav-video-block" role="tab" data-toggle="tab" id="video-tab">Video</a>
+                        </li>
+                    </ul>
+                    <div class="up-down-icons pull-right">
+                        <a href="#" class="scroll-arrow" data-scroll="down">
+                            <img src="../assets/images/icons/down-icon.png" alt="Down" class="down-icon">
+                        </a>
+                        <a href="#" class="scroll-arrow" data-scroll="up">
+                            <img src="../assets/images/icons/up-icon.png" alt="Up" class="up-icon">
+                        </a>
+                    </div>
+                </nav>
+                <!--nav-part-->
+                <!--mobile-menu-->
+
+                <!--mobile-menu-->
+            </div>
+        </div>
+        <!--content-->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane  active " id="nav-all-block">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="media  figure-media-body">
+                            <img class="d-flex mr-3" src="../assets/images/avatar-1.png" alt="Avatar">
+                            <div class="media-body ">
+                                <h5 class="mt-0">Nature is awesome !</h5>
+                                <div class="dropdown show text-right">
+                                    <a class="btn" href="#" role="button" id="dropdownIcon-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                    </a>
+                                    <div class="dropdown-menu drop">
+                                        <a class="dropdown-item" href="#">Share</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                                <span class="publication-time">March 2 at 8:34 AM</span>
+                                <a href="feed-inapp-view.html">
+                                </a>
+                            </div>
+                        </div>
+                        <figure class="figure">
+                            <div class="card bg-dark">
+                                <div class="overlay-div">
+                                &nbsp;
+                                </div>
+                                <img class="card-img figure-img img-fluid" src="../assets/images/image-1.jpg" alt="card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Watching the sunset
+                                        <img src="../assets/images/icons/twitter-icon.png" class="float-right" alt="Twitter">
+                                    </h5>
+                                    <p class="card-text">Check me out live <span class="hashtag">#sunset</span></p>
+                                </div>
+                            </div>
+                            <figcaption class="figure-caption text-left">
+                                <ul class="nav info-icons">
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="media  figure-media-body">
+                            <img class="d-flex mr-3" src="../assets/images/avatar-2.png" alt="Avatar">
+                            <div class="media-body">
+                                <h5 class="mt-0">Nature is awesome !</h5>
+                                <div class="dropdown show text-right">
+                                    <a class="btn  " href="#" role="button" id="dropdownIcon-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                    </a>
+                                    <div class="dropdown-menu drop">
+                                        <a class="dropdown-item" href="#">Share</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                                <span class="publication-time">March 2 at 8:34 AM</span>
+                                <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <figure class="figure">
+                            <div class="card bg-dark">
+                                <div class="overlay-div">
+                                    &nbsp;
+                                </div>
+                                <img class="card-img figure-img img-fluid" src="../assets/images/image-2.jpg" alt="ALT">
+                                <div class="card-img-overlay">
+                                    <img src="../assets/images/icons/play-icon.png" alt="Play Icon">
+                                    <img src="../assets/images/icons/youtube-icon.png" alt="Youtube Icon" class="float-right">
+                                </div>
+                            </div>
+                            <figcaption class="figure-caption text-left">
+                                <ul class="nav info-icons">
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="media  figure-media-body">
+                            <img class="d-flex mr-3" src="../assets/images/avatar-3.png" alt="Avatar">
+                            <div class="media-body">
+                                <h5 class="mt-0">Nature is awesome !</h5>
+                                <div class="dropdown show text-right">
+                                    <a class="btn  " href="#" role="button" id="dropdownIcon-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                    </a>
+                                    <div class="dropdown-menu drop">
+                                        <a class="dropdown-item" href="#">Share</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                                <span class="publication-time">March 2 at 8:34 AM</span>
+                                <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <figure class="figure">
+                            <div class="card bg-dark">
+                                <div class="overlay-div">
+                                    &nbsp;
+                                </div>
+                                <img class="card-img figure-img img-fluid" src="../assets/images/image-3.jpg" alt="ALT">
+                                <div class="card-img-overlay">
+                                    <div class="live-btn-pic float-right text-center">
+                                        <a href="#">LIVE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption class="figure-caption text-left">
+                                <ul class="nav info-icons">
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Love"><span>24</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt=""><span>850</span></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="media  figure-media-body">
+                            <img class="d-flex mr-3" src="../assets/images/avatar-4.png" alt="Avatar">
+                            <div class="media-body">
+                                <h5 class="mt-0">Nature is awesome !</h5>
+                                <div class="dropdown show text-right">
+                                    <a class="btn  " href="#" role="button" id="dropdownIcon-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                    </a>
+                                    <div class="dropdown-menu drop">
+                                        <a class="dropdown-item" href="#">Share</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                                <span class="publication-time">March 2 at 8:34 AM</span>
+                                <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <figure class="figure">
+                            <div class="card bg-dark">
+                                <div class="overlay-div">
+                                    &nbsp;
+                                </div>
+                                <img class="card-img figure-img img-fluid" src="../assets/images/image-4.jpg" alt="ALT">
+                                <div class="card-img-overlay">
+                                    <img src="../assets/images/icons/photo-icon.png" alt="Photo Icon" class="photo-icon">
+                                    <img src="../assets/images/icons/googleplus-icon.png" class="float-right google-plus-icon" alt="Google Plus Icon" >
+                                </div>
+                            </div>
+                            <figcaption class="figure-caption text-left">
+                                <ul class="nav info-icons">
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="media  figure-media-body">
+                            <img class="d-flex mr-3" src="../assets/images/avatar-5.png" alt="Avatar">
+                            <div class="media-body">
+                                <h5 class="mt-0">Nature is awesome !</h5>
+                                <div class="dropdown show text-right">
+                                    <a class="btn  " href="#" role="button" id="dropdownIcon-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                    </a>
+                                    <div class="dropdown-menu drop">
+                                        <a class="dropdown-item" href="#">Share</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                                <span class="publication-time">March 2 at 8:34 AM</span>
+                                <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <figure class="figure">
+                            <div class="card bg-dark">
+                                <div class="overlay-div">
+                                    &nbsp;
+                                </div>
+                                <img class="card-img figure-img img-fluid" src="../assets/images/image-5.jpg" alt="ALT">
+                                <div class="card-img-overlay">
+                                    <div class="live-btn-pic float-right text-center">
+                                        <a href="#">LIVE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption class="figure-caption text-left">
+                                <ul class="nav info-icons">
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="media  figure-media-body">
+                            <img class="d-flex mr-3" src="../assets/images/avatar-6.png" alt="Avatar">
+                            <div class="media-body">
+                                <h5 class="mt-0">Nature is awesome !</h5>
+                                <div class="dropdown show text-right">
+                                    <a class="btn  " href="#" role="button" id="dropdownIcon-6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                    </a>
+                                    <div class="dropdown-menu drop">
+                                        <a class="dropdown-item" href="#">Share</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                                <span class="publication-time">March 2 at 8:34 AM</span>
+                                <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <figure class="figure">
+                            <div class="card bg-dark">
+                                <div class="overlay-div">
+                                    &nbsp;
+                                </div>
+                                <img class="card-img figure-img img-fluid" src="../assets/images/image-6.jpg" alt="ALT">
+                                <div class="card-img-overlay">
+                                    <img src="../assets/images/icons/photo-icon.png" alt="Photo Icon" class="photo-icon">
+                                    <img src="../assets/images/icons/googleplus-icon.png" class="float-right google-plus-icon" alt="Google Plus Icon" >
+                                </div>
+                            </div>
+                            <figcaption class="figure-caption text-left">
+                                <ul class="nav info-icons">
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="media  figure-media-body">
+                            <img class="d-flex mr-3" src="../assets/images/avatar-7.png" alt="Avatar">
+                            <div class="media-body">
+                                <h5 class="mt-0">Nature is awesome !</h5>
+                                <div class="dropdown show text-right">
+                                    <a class="btn  " href="#" role="button" id="dropdownIcon-7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                    </a>
+                                    <div class="dropdown-menu drop">
+                                        <a class="dropdown-item" href="#">Share</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                                <span class="publication-time">March 2 at 8:34 AM</span>
+                                <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <figure class="figure">
+                            <div class="card bg-dark">
+                                <div class="overlay-div">
+                                    &nbsp;
+                                </div>
+                                <img class="card-img figure-img img-fluid" src="../assets/images/image-7.jpg" alt="ALT">
+                                <div class="card-img-overlay">
+                                    <img src="../assets/images/icons/youtube-icon.png" alt="Youtube Icon" class="float-right youtube-icon">
+                                </div>
+                            </div>
+                            <figcaption class="figure-caption text-left">
+                                <ul class="nav info-icons">
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="media  figure-media-body">
+                            <img class="d-flex mr-3" src="../assets/images/avatar-8.png" alt="Avatar">
+                            <div class="media-body">
+                                <h5 class="mt-0">Nature is awesome !</h5>
+                                <div class="dropdown show text-right">
+                                    <a class="btn  " href="#" role="button" id="dropdownIcon18" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                    </a>
+                                    <div class="dropdown-menu drop">
+                                        <a class="dropdown-item" href="#">Share</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                                <span class="publication-time">March 2 at 8:34 AM</span>
+                                <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <figure class="figure">
+                            <div class="card bg-dark">
+                                <div class="overlay-div">
+                                    &nbsp;
+                                </div>
+                                <img class="card-img figure-img img-fluid" src="../assets/images/image-8.jpg" alt="ALT">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Rocky mountains are great <img src="../assets/images/icons/twitter-icon.png" alt="Twitter" class="float-right"></h5>
+                                    <p class="card-text">Check me out live <span class="hashtag">#checkmeout</span></p>
+                                </div>
+                            </div>
+                            <figcaption class="figure-caption home-figur-caption text-left">
+                                <ul class="nav info-icons">
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="media  figure-media-body">
+                            <img class="d-flex mr-3" src="../assets/images/avatar-8.png" alt="Avatar">
+                            <div class="media-body">
+                                <h5 class="mt-0">Nature is awesome !</h5>
+                                <div class="dropdown show text-right">
+                                    <a class="btn  " href="#" role="button" id="dropdownIcon28" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                    </a>
+                                    <div class="dropdown-menu drop">
+                                        <a class="dropdown-item" href="#">Share</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                                <span class="publication-time">March 2 at 8:34 AM</span>
+                                <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <figure class="figure">
+                            <div class="card bg-dark">
+                                <div class="overlay-div">
+                                    &nbsp;
+                                </div>
+                                <img class="card-img figure-img img-fluid" src="../assets/images/image-8.jpg" alt="ALT">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Rocky mountains are great <img src="../assets/images/icons/twitter-icon.png" alt="Twitter" class="float-right"></h5>
+                                    <p class="card-text">Check me out live <span class="hashtag">#checkmeout</span></p>
+                                </div>
+                            </div>
+                            <figcaption class="figure-caption home-figur-caption text-left">
+                                <ul class="nav info-icons">
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="media  figure-media-body">
+                            <img class="d-flex mr-3" src="../assets/images/avatar-8.png" alt="Avatar">
+                            <div class="media-body">
+                                <h5 class="mt-0">Nature is awesome !</h5>
+                                <div class="dropdown show text-right">
+                                    <a class="btn  " href="#" role="button" id="dropdownIcon38" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                    </a>
+                                    <div class="dropdown-menu drop">
+                                        <a class="dropdown-item" href="#">Share</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                                <span class="publication-time">March 2 at 8:34 AM</span>
+                                <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <figure class="figure">
+                            <div class="card bg-dark">
+                                <div class="overlay-div">
+                                    &nbsp;
+                                </div>
+                                <img class="card-img figure-img img-fluid" src="../assets/images/image-8.jpg" alt="ALT">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Rocky mountains are great <img src="../assets/images/icons/twitter-icon.png" alt="Twitter" class="float-right"></h5>
+                                    <p class="card-text">Check me out live <span class="hashtag">#checkmeout</span></p>
+                                </div>
+                            </div>
+                            <figcaption class="figure-caption home-figur-caption text-left">
+                                <ul class="nav info-icons">
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                    <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="nav-text-block">
+                <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-1.png" alt="Avatar">
+                        <div class="media-body ">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-1.jpg" alt="card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Watching the sunset
+                                    <img src="../assets/images/icons/twitter-icon.png" class="float-right" alt="Twitter">
+                                </h5>
+                                <p class="card-text">Check me out live <span class="hashtag">#sunset</span></p>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-2.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-2.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/play-icon.png" alt="Play Icon">
+                                <img src="../assets/images/icons/youtube-icon.png" alt="Youtube Icon" class="float-right">
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-3.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-3.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <div class="live-btn-pic float-right text-center">
+                                    <a href="#">LIVE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Love"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt=""><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-4.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-14" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-4.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/photo-icon.png" alt="Photo Icon" class="photo-icon">
+                                <img src="../assets/images/icons/googleplus-icon.png" class="float-right google-plus-icon" alt="Google Plus Icon" >
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-5.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-15" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-5.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <div class="live-btn-pic float-right text-center">
+                                    <a href="#">LIVE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-6.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-6.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/photo-icon.png" alt="Photo Icon" class="photo-icon">
+                                <img src="../assets/images/icons/googleplus-icon.png" class="float-right google-plus-icon" alt="Google Plus Icon" >
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-7.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-17" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-7.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/youtube-icon.png" alt="Youtube Icon" class="float-right youtube-icon">
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-8.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-18" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-8.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Rocky mountains are great <img src="../assets/images/icons/twitter-icon.png" alt="Twitter" class="float-right"></h5>
+                                <p class="card-text">Check me out live <span class="hashtag">#checkmeout</span></p>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption home-figur-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            </div>
+            <div role="tabpanel" class="tab-pane  " id="nav-live-block" >
+                <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-1.png" alt="Avatar">
+                        <div class="media-body ">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-1.jpg" alt="card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Watching the sunset
+                                    <img src="../assets/images/icons/twitter-icon.png" class="float-right" alt="Twitter">
+                                </h5>
+                                <p class="card-text">Check me out live <span class="hashtag">#sunset</span></p>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-2.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-2.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/play-icon.png" alt="Play Icon">
+                                <img src="../assets/images/icons/youtube-icon.png" alt="Youtube Icon" class="float-right">
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-3.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-23" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-3.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <div class="live-btn-pic float-right text-center">
+                                    <a href="#">LIVE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Love"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt=""><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-4.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-24" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-4.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/photo-icon.png" alt="Photo Icon" class="photo-icon">
+                                <img src="../assets/images/icons/googleplus-icon.png" class="float-right google-plus-icon" alt="Google Plus Icon" >
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-5.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-5.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <div class="live-btn-pic float-right text-center">
+                                    <a href="#">LIVE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-6.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-26" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-6.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/photo-icon.png" alt="Photo Icon" class="photo-icon">
+                                <img src="../assets/images/icons/googleplus-icon.png" class="float-right google-plus-icon" alt="Google Plus Icon" >
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-7.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-27" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-7.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/youtube-icon.png" alt="Youtube Icon" class="float-right youtube-icon">
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-8.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-28" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-8.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Rocky mountains are great <img src="../assets/images/icons/twitter-icon.png" alt="Twitter" class="float-right"></h5>
+                                <p class="card-text">Check me out live <span class="hashtag">#checkmeout</span></p>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption home-figur-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="nav-images-block">
+                <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-1.png" alt="Avatar">
+                        <div class="media-body ">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-31" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-1.jpg" alt="card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Watching the sunset
+                                    <img src="../assets/images/icons/twitter-icon.png" class="float-right" alt="Twitter">
+                                </h5>
+                                <p class="card-text">Check me out live <span class="hashtag">#sunset</span></p>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-2.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-32" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-2.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/play-icon.png" alt="Play Icon">
+                                <img src="../assets/images/icons/youtube-icon.png" alt="Youtube Icon" class="float-right">
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-3.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-33" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-3.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <div class="live-btn-pic float-right text-center">
+                                    <a href="#">LIVE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Love"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt=""><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-4.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-34" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-4.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/photo-icon.png" alt="Photo Icon" class="photo-icon">
+                                <img src="../assets/images/icons/googleplus-icon.png" class="float-right google-plus-icon" alt="Google Plus Icon" >
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-5.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-53" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-5.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <div class="live-btn-pic float-right text-center">
+                                    <a href="#">LIVE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-6.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-36" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-6.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/photo-icon.png" alt="Photo Icon" class="photo-icon">
+                                <img src="../assets/images/icons/googleplus-icon.png" class="float-right google-plus-icon" alt="Google Plus Icon" >
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-7.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-37" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-7.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/youtube-icon.png" alt="Youtube Icon" class="float-right youtube-icon">
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-8.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-38" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-8.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Rocky mountains are great <img src="../assets/images/icons/twitter-icon.png" alt="Twitter" class="float-right"></h5>
+                                <p class="card-text">Check me out live <span class="hashtag">#checkmeout</span></p>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption home-figur-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="nav-video-block">
+                <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-1.png" alt="Avatar">
+                        <div class="media-body ">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-41" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-1.jpg" alt="card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Watching the sunset
+                                    <img src="../assets/images/icons/twitter-icon.png" class="float-right" alt="Twitter">
+                                </h5>
+                                <p class="card-text">Check me out live <span class="hashtag">#sunset</span></p>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-2.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-42" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-2.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/play-icon.png" alt="Play Icon">
+                                <img src="../assets/images/icons/youtube-icon.png" alt="Youtube Icon" class="float-right">
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-3.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-43" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-3.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <div class="live-btn-pic float-right text-center">
+                                    <a href="#">LIVE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Love"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt=""><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-4.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-44" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-4.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/photo-icon.png" alt="Photo Icon" class="photo-icon">
+                                <img src="../assets/images/icons/googleplus-icon.png" class="float-right google-plus-icon" alt="Google Plus Icon" >
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-5.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-45" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-5.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <div class="live-btn-pic float-right text-center">
+                                    <a href="#">LIVE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-6.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-46" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-6.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/photo-icon.png" alt="Photo Icon" class="photo-icon">
+                                <img src="../assets/images/icons/googleplus-icon.png" class="float-right google-plus-icon" alt="Google Plus Icon" >
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-7.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-47" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-7.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <img src="../assets/images/icons/youtube-icon.png" alt="Youtube Icon" class="float-right youtube-icon">
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="media  figure-media-body">
+                        <img class="d-flex mr-3" src="../assets/images/avatar-8.png" alt="Avatar">
+                        <div class="media-body">
+                            <h5 class="mt-0">Nature is awesome !</h5>
+                            <div class="dropdown show text-right">
+                                <a class="btn  " href="#" role="button" id="dropdownIcon-8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/icons/setting-icon.png" alt="Setting Icon" class="figure-icon">
+                                </a>
+                                <div class="dropdown-menu drop">
+                                    <a class="dropdown-item" href="#">Share</a>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                </div>
+                            </div>
+                            <span class="publication-time">March 2 at 8:34 AM</span>
+                            <a href="#">
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="figure">
+                        <div class="card bg-dark">
+                            <div class="overlay-div">
+                                &nbsp;
+                            </div>
+                            <img class="card-img figure-img img-fluid" src="../assets/images/image-8.jpg" alt="ALT">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Rocky mountains are great <img src="../assets/images/icons/twitter-icon.png" alt="Twitter" class="float-right"></h5>
+                                <p class="card-text">Check me out live <span class="hashtag">#checkmeout</span></p>
+                            </div>
+                        </div>
+                        <figcaption class="figure-caption home-figur-caption text-left">
+                            <ul class="nav info-icons">
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/love-icon.png" alt="Like"><span>24</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/comments-icon.png" alt="Comment"><span>543</span></a></li>
+                                <li class="nav-item"><a href="#"><img src="../assets/images/icons/view-icon.png" alt="View"><span>850</span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+<!--main-->
+<link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/quic.min.js"></script>
+<script src="../assets/js/datepicker.min.js"></script>
+</html>
