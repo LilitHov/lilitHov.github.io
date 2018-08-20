@@ -1,0 +1,687 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 440px) {
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 699px) {
+
+}
+
+@media only screen and (min-device-width: 695px) and (max-device-width: 750px) {
+    .text-slide {
+        width: 65% !important;
+    }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1340px) {
+    #gkWrap1, #gkWrap2, #gkWrap3 {
+        width: 100%;
+    }
+
+    div#gkMainBlock {
+        display: block;
+    }
+
+    #gkContent {
+        width: 75% !important;
+    }
+
+    #gkLeft {
+        width: 25% !important;
+    }
+
+    .gkPageTopLeft {
+        width: 97%;
+    }
+
+    #gkMenu {
+        width: auto;
+    }
+
+    div.gk-menu > ul.level0 > li {
+        width: 12%;
+    }
+
+    .jspContainer {
+        width: 100% !important;
+    }
+
+    .jspPane {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    #gkPageTop {
+        width: 24%;
+    }
+
+    #gkLogo a {
+        margin: 15px 0 0 0;
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    #gkLogo img {
+        height: 100%;
+        width: auto;
+    }
+
+    .nav-figure {
+        background: transparent;
+        padding: 24px 15px 0 0;
+        float: right;
+    }
+
+    .search-box, .search-box > input#mod-search-searchword {
+        width: 100%;
+    }
+
+    .search-box {
+        padding: 0 0 0 30px;
+    }
+
+    #gkLeft .box li > a {
+        width: 100%;
+        line-height: 20px;
+    }
+
+    #gkLeft .box li {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #socials .b-share__handle.b-share__link {
+        margin: 0 14px 0 -7px;
+    }
+
+    div#counters {
+        margin: 0 !Important;
+        left: 0 !Important;
+        top: 0 !Important;
+    }
+
+    #gkContent .welcome-in {
+        margin: 0 0 0 -324px;
+        position: relative;
+        left: 50%;
+    }
+
+    #gkContent .share-left {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0 0 0 75px;
+    }
+
+    #gkContent .reviews-wrap {
+        width: 100%;
+    }
+
+    .news-inner .newsfeed-item {
+        width: 50%;
+        padding: 0 25px 25px 0;
+        box-sizing: border-box;
+    }
+
+    .news-inner .newsfeed-item:nth-child(2n) {
+        margin: 0 0 0 0px;
+        padding: 0 0 25px 25px;
+        box-sizing: border-box;
+    }
+
+    .news-inner .newsfeed.rss-news {
+        margin: 50px 40px 0 40px;
+    }
+
+    #gkWrap3 {
+        padding: 0 0 0 28% !important;
+    }
+
+    .calcpage .textal {
+        width: 40%;
+        padding: 0 15px 0 0;
+    }
+
+    #gkContent #calc.calcpage h2 {
+        width: 30% !Important;
+        box-sizing: border-box;
+        font: 300 18px/30px "Open Sans";
+    }
+
+    #gkContent #calc.calcpage .calccon.act {
+        width: 70%;
+        float: left;
+        left: 30%;
+    }
+
+    .qvm {
+        position: relative;
+        float: left;
+        font-size: 14px;
+        margin: 0 40px 0 15px;
+    }
+
+    #calc.calcpage .qvm > input {
+        margin: -15px 0 15px 0;
+    }
+
+    .calccon.act div#type-1 > span {
+        text-align: center !important;
+    }
+
+    table.table-contact {
+        width: 100% !important;
+    }
+
+    table.table-contact * {
+        font-size: 14px !important;
+        width: auto !important;
+    }
+
+    #gkComponent .page-wrapper {
+        padding: 50px 20px 0;
+    }
+
+    td.page-text {
+        padding: 0 20px 0;
+    }
+
+    form.contacts-form {
+        width: 100%;
+    }
+
+    .contacts-form fieldset:first-child {
+        width: 40% !important;
+    }
+
+    .contacts-form input:not([type="submit"]), .contacts-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contacts-form fieldset {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1099px) {
+
+    #gkWrap1, #gkWrap2, #gkWrap3 {
+        width: 100%;
+    }
+
+    #gkWrap3 {
+        background: none repeat scroll 0 0 #63C672;
+        box-sizing: border-box;
+        margin: -10px auto 0;
+        padding: 0 30px 0 28%;
+    }
+
+    div#gkMainBlock {
+        display: block;
+    }
+
+    #gkContent {
+        width: 75% !important;
+    }
+
+    #gkLeft {
+        width: 25% !important;
+    }
+
+    .gkPageTopLeft {
+        width: 97%;
+    }
+
+    #gkMenu {
+        width: auto;
+    }
+
+    div.gk-menu > ul.level0 > li {
+        width: 12%;
+    }
+
+    .jspContainer {
+        width: 100% !important;
+    }
+
+    .jspPane {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    #gkPageTop {
+        width: 24%;
+    }
+
+    #gkLogo a {
+        margin: 15px 0 0 0;
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    #gkLogo img {
+        height: auto;
+        width: 100%;
+    }
+
+    .nav-figure {
+        background: transparent;
+        padding: 24px 15px 0 0;
+        float: right;
+    }
+
+    .search-box, .search-box > input#mod-search-searchword {
+        width: 100%;
+    }
+
+    .search-box {
+        padding: 0 0 0 30px;
+    }
+
+    #gkLeft .box li > a {
+        width: 100%;
+        line-height: 20px;
+    }
+
+    #gkLeft .box li {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #socials .b-share__handle.b-share__link {
+        margin: 0 14px 0 -7px;
+    }
+
+    div#counters {
+        margin: 0 !Important;
+        left: 0 !Important;
+        top: 0 !Important;
+    }
+
+    #gkContent .welcome-in {
+        margin: 0 0 0 -324px;
+        position: relative;
+        left: 50%;
+    }
+
+    #gkContent .share-left {
+        width: 40%;
+        box-sizing: border-box;
+        padding: 0 0 0 35px;
+    }
+
+    #gkContent .reviews-wrap {
+        width: 100%;
+    }
+
+    .news-inner .newsfeed-item {
+        width: 50%;
+        padding: 0 25px 25px 0;
+        box-sizing: border-box;
+    }
+
+    .news-inner .newsfeed-item:nth-child(2n) {
+        margin: 0 0 0 0px;
+        padding: 0 0 25px 25px;
+        box-sizing: border-box;
+    }
+
+    .news-inner .newsfeed.rss-news {
+        margin: 50px 40px 0 40px;
+    }
+
+    #gkLogo {
+        width: 60%;
+        margin: 3% 0 0 0;
+    }
+
+    .tel {
+        color: #292525;
+        font: 300 17px/26px "Exo 2";
+    }
+
+    .numb a {
+        width: 100%;
+        font: 500 18px/26px "Exo 2";
+    }
+
+    div#gkLeftMiddle {
+        display: block;
+    }
+
+    .gkCol {
+        display: block;
+    }
+
+    #gkLeft .infobox .h1 {
+        width: 100%;
+    }
+
+    .box.infobox .infobox div:nth-of-type(3) {
+        width: 100% !important;
+        height: auto;
+        border-radius: 0 !important;
+        margin: 20px 0 0 0 !important;
+    }
+
+    .top_call > img {
+        width: 60% !important;
+        height: auto;
+    }
+
+    .top_call {
+        height: 500px !important;
+    }
+
+    .top_call_in {
+        height: 244px !important;
+    }
+
+    .top_call_in {
+        padding: 35px 0 35px 50%;
+        bottom: 0;
+        top: 256px;
+    }
+
+    .calculator {
+        height: 700px;
+        background: url(../images/calc-bg.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    #gkContent .calculator #calc h2, #gkContent .calculator #calc .h2 {
+        width: 40% !important;
+        font: 300 20px/30px "Open Sans";
+    }
+
+    .calculator .calccon {
+        width: 60% !important;
+        left: 40%;
+        top: 0;
+        height: auto;
+    }
+
+    .calculator #calc label {
+        left: 0;
+    }
+
+    .calculator .textal {
+        width: 40%;
+        text-align: left;
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    .calculator .qvm {
+        float: left;
+        font: italic 300 18px "Open Sans";
+        position: relative;
+        color: #fff;
+    }
+
+    .calculator #type-2, .calculator #type-1 {
+        padding: 0 0 35px 0;
+    }
+
+    .b-top {
+        z-index: 2600;
+        position: fixed;
+        left: 0;
+        bottom: 90px;
+        width: 100%;
+        margin-left: -15px;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    #gkContent .knopka_vz li {
+        font: 300 14px "Open Sans";
+    }
+
+    #gkContent .knopka_vz p {
+        font: 300 15px "Open Sans";
+    }
+
+    #gkBottom1 p:first-child {
+        width: 50% !important;
+    }
+
+    .calcpage .textal {
+        width: 40%;
+        padding: 0 15px 0 0;
+    }
+
+    #gkContent #calc.calcpage h2 {
+        width: 30% !Important;
+        box-sizing: border-box;
+        font: 300 18px/30px "Open Sans";
+    }
+
+    #gkContent #calc.calcpage .calccon.act {
+        width: 70%;
+        float: left;
+        left: 30%;
+    }
+
+    .qvm {
+        position: relative;
+        float: left;
+        font-size: 14px;
+        margin: 0 40px 0 15px;
+    }
+
+    #calc.calcpage .qvm > input {
+        margin: -15px 0 15px 0;
+    }
+
+    .calccon.act div#type-1 > span {
+        text-align: center !important;
+    }
+
+    table.table-contact {
+        width: 100% !important;
+    }
+
+    table.table-contact * {
+        font-size: 14px !important;
+        width: auto !important;
+    }
+
+    #gkComponent .page-wrapper {
+        padding: 50px 20px 0;
+    }
+
+    td.page-text {
+        padding: 0 20px 0;
+    }
+
+    form.contacts-form {
+        width: 100%;
+    }
+
+    .contacts-form fieldset:first-child {
+        width: 40% !important;
+    }
+
+    .contacts-form input:not([type="submit"]), .contacts-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contacts-form fieldset {
+        width: 40%;
+    }
+
+    .services-item {
+        width: 30%;
+    }
+
+    .services-item img {
+        float: none;
+    }
+
+}
+
+#gkLeft {
+    padding: 83px 0 0 0 !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#gkLeft-in {
+    box-sizing: border-box;
+    padding: 90px 20px 0 !important;
+}
+
+#gkLeft .soc_networks {
+    height: 200px !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #63C672;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next {
+    right: 5px;
+    z-index: 999;
+}
+
+.slick-prev {
+    left: 5px;
+    z-index: 999;
+}
+
+.main-title {
+    margin: 20px 0 0 0 !important;
+}
+
+.knopka_vz {
+    padding: 20px 20px;
+}
+
+#gkContent .knopka_vz p, #gkContent .knopka_vz li {
+    font: 400 14px "Open Sans";
+    line-height: 26px;
+}
+
+.content p, #gkContent p {
+    text-indent: 0px;
+}
+
+div#akcia .main-title {
+    text-align: left !important;
+    font: 34px "Comfortaa" !Important;
+    color: #DB3535 !Important;
+}
+
+#gkContent .share-left {
+    padding: 15px 0 0 75px;
+}
+
+.news {
+    padding: 15px 0;
+}
+
+.news-inner .feed.rss-news {
+    margin: 0 !important;
+}
+
+.news-inner .newsfeed.rss-news {
+    margin: 10px 0 0 40px;
+}
+
+.allnews {
+    margin: 20px auto 0;
+}
+
+.often-questions .main-title {
+    padding: 20px 0 !Important;
+}
+
+.often-questions {
+    padding: 0 !Important;
+    margin: 0 !important;
+}
+
+.contacts-main {
+    padding: 5px 0 20px;
+}
+
+.partners-head {
+    padding: 20px 0 0 !important;
+}
+
+#gkContent .share-left li {
+    font: 400 14px "Open Sans";
+}
+
+#gkContent .news-inner .newsfeed-item > p {
+    font: 400 14px/30px "Open Sans";
+    display: block;
+    text-indent: 0 !important;
+}
+
+#one-list div[id^="faq"] .question p {
+    font: 14px/24px "Open Sans";
+}
+
+div#counters {
+    float: left !Important;
+    left: 0 !Important;
+}
+
+#gkWrap3 {
+    height: 200px;
+}
+
+#gkFooter {
+    height: auto;
+}
+
+.director {
+    height: 375px;
+}
+
+#gkContent .respert {
+    margin: 0 0 0 25px;
+}
+
+#gkContent .director p {
+    font: 300 14px/23px "Open Sans";
+    text-indent: 0;
+}
+
+#nav-bar {
+    width: 30% !important;
+}
+
+#gkSearch.numb {
+    width: auto !important;
+    float: none;
+    padding: 0 20px;
+}
+
+.numb a {
+    width: 100%;
+    font: 500 18px/26px "Exo 2";
+}
+
+.numb a {
+    width: 100%;
+    font: 500 18px/26px "Exo 2";
+}

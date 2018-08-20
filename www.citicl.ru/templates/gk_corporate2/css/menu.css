@@ -1,0 +1,291 @@
+div.gk-menu {
+    height: 100%
+}
+
+div.gk-menu > ul.level0 > li {
+    height: 100%;
+    display: table-cell;
+    text-align: center
+}
+
+div.gk-menu > ul.level0 > li > a {
+    display: inline-block;
+    width: 100%
+}
+
+div.gk-menu > ul.level0 > li > a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+div.gk-menu > ul.level0 > li > a > span.menu-desc {
+    display: none
+}
+
+div.gk-menu > ul.level0 > li > .childcontent {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    padding: 0;
+    text-transform: none;
+    -moz-box-shadow: 1px 1px 1px #504a42;
+    -webkit-box-shadow: 1px 1px 1px #504a42;
+    box-shadow: 1px 1px 1px #504a42
+}
+
+div.gk-menu > ul.level0 > li > .childcontent .childcontent {
+    margin-left: 170px !important;
+    margin-top: -30px !important;
+    padding: 0 0 6px
+}
+
+div.gk-menu > ul.level0 > li > .childcontent .childcontent ul {
+    -moz-box-shadow: 1px 1px 1px #504a42;
+    -webkit-box-shadow: 1px 1px 1px #504a42;
+    box-shadow: 1px 1px 1px #504a42
+}
+
+div.gk-menu > ul.level0 > li > .childcontent .module {
+    font-size: 90%;
+    font-weight: 400;
+    line-height: 1.2;
+    height: auto;
+    background: #979189;
+    color: #fff;
+    width: 180px;
+    margin-left: -7px;
+    padding: 10px;
+    -moz-box-shadow: 1px 1px 1px #504a42;
+    -webkit-box-shadow: 1px 1px 1px #504a42;
+    box-shadow: 1px 1px 1px #504a42
+}
+
+div.gk-menu > ul.level0 > li > .childcontent .module p {
+    text-indent: 0
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul {
+    margin: 0 7px;
+    background: #979189
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul li {
+    border-top: 1px solid #aca7a1;
+    height: 30px;
+    line-height: 30px;
+    background: url(../images/menu_bullet.png) 2px center no-repeat;
+    text-indent: 12px
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul li.first {
+    border-top: none
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul li:hover {
+    background: url(../images/menu_bullet_hover.png) 2px center no-repeat;
+    text-indent: 12px;
+    color: #fff
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul li a {
+    color: #c8c4c0
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul li a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul li li {
+    margin: 0 7px;
+    border-top: 1px solid #aca7a1;
+    height: 30px;
+    line-height: 30px;
+    background: url(../images/menu_bullet.png) 2px center no-repeat
+}
+
+div#gkSubmenu, div.gk-menu > ul.level0 > li > .childcontent {
+    background-color: #979189
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul li a span.menu-desc {
+    display: block;
+    margin: 0;
+    color: #656565
+}
+
+div.gk-menu > ul.level0 > li .childcontent .gkcol ul {
+    padding: 0 !important
+}
+
+div.gk-menu > ul.level0 > li li.group {
+    height: auto !important
+}
+
+div.gk-menu > ul.level0 > li ul.level1 li.group {
+    border: none !important
+}
+
+div.gk-menu > ul.level0 > li li.group .group-title {
+    margin: 12px 0 0;
+    padding: 4px 6px;
+    line-height: 1.2;
+    background: #979189;
+    border: 1px solid #a6a098
+}
+
+div.gk-menu > ul.level0 > li li.group .group-title .menu-title {
+    color: #c8c4c0;
+    line-height: 14px
+}
+
+div.gk-menu > ul.level0 > li li.group .group-title .menu-desc {
+    line-height: 12px;
+    font-size: 10px;
+    color: #b5afa7
+}
+
+div.gk-menu > ul.level0 > li li.group .gk-group-content > ul {
+    margin: 0 !important;
+    padding: 0
+}
+
+div.gk-menu > ul.level0 > li.active > a > span:hover, div.gk-menu > ul.level0 > li:hover > a > span {
+    box-shadow: 0 -4px 0 0 #63C672 inset
+}
+
+div#gkDropSub > ul ul, div#gkDropSub > ul > li ul {
+    -moz-box-shadow: 1px 1px 1px #504a42;
+    -webkit-box-shadow: 1px 1px 1px #504a42
+}
+
+div#gkDropMain {
+    height: 20px
+}
+
+div#gkDropMain > ul > li {
+    padding: 0 11px;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px 0
+}
+
+div#gkDropSub, div#gkSubmenu {
+    height: 40px;
+    width: 100%;
+    clear: both
+}
+
+div#gkDropMain > ul > li:first-child {
+    padding: 0 11px 0 16px;
+    border-left: none
+}
+
+div#gkDropMain > ul > li > a {
+    color: #fff;
+    padding: 0 7px
+}
+
+div#gkDropMain > ul > li > a:hover {
+    color: #fff
+}
+
+div#gkDropMain > ul > li > a > span.menu-desc {
+    display: none
+}
+
+div#gkDropSub .menu-desc {
+    display: none !important
+}
+
+div#gkDropSub > ul {
+    padding: 10px 11px 0;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 0 10px
+}
+
+div#gkDropSub > ul ul ul {
+    margin-top: -24px
+}
+
+div#gkDropSub > ul ul {
+    margin: 0;
+    text-transform: none;
+    box-shadow: 1px 1px 1px #504a42;
+    background-color: #6C6459
+}
+
+div#gkDropSub > ul.active {
+    background: 0 0
+}
+
+div#gkDropSub > ul > li {
+    padding: 0 11px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    border-left: 1px solid #888178
+}
+
+div#gkDropSub > ul > li li:first-child, div#gkDropSub > ul > li:first-child {
+    border: none
+}
+
+div#gkDropSub > ul > li ul {
+    padding: 0 8px;
+    box-shadow: 1px 1px 1px #504a42
+}
+
+div#gkDropSub > ul > li li {
+    float: none;
+    border-top: 1px solid #888178
+}
+
+div#gkDropSub > ul > li a {
+    display: block;
+    height: 20px;
+    padding: 0 7px;
+    line-height: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff
+}
+
+div#gkDropSub > ul > li a > span.menu-desc {
+    margin-top: -8px;
+    padding-bottom: 8px;
+    line-height: 0;
+    font-size: 9px;
+    color: #fff
+}
+
+div#gkDropSub > ul > li li a {
+    height: 30px;
+    line-height: 30px;
+    background: url(../images/menu_bullet.png) 2px center no-repeat;
+    text-indent: 12px;
+    border: 1px solid #fff
+}
+
+div#gkDropSub > ul > li li a:first-child {
+    border: none
+}
+
+div#gkDropSub > ul > li li a:hover {
+    background: url(../images/menu_bullet_hover.png) 2px center no-repeat;
+    text-indent: 12px;
+    color: #fff
+}
+
+div#gkDropSub > ul li.active > a, div#gkDropSub > ul li.active > a span, div#gkDropSub > ul li:hover > a, div#gkDropSub > ul li:hover > a span {
+    color: #fff !important
+}
+
+div#gkDropSub > ul > li.haschild:hover > a, div#gkDropSub > ul > li.haschild > a:active, div#gkDropSub > ul > li.haschild > a:focus, div#gkDropSub > ul > li:hover > a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    background: #6C6459;
+    -moz-box-shadow: 1px 1px 1px #504a42;
+    -webkit-box-shadow: 1px 1px 1px #504a42
+}
