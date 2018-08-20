@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.citicl.ru	TRUE	/	FALSE	1999999999	7abbd9b520b9100b7b88bcc1b7a7a4e6	ro8ah9vbgq5s9k1mddthu2nd13
+.bookcdn.com	TRUE	/	FALSE	1999999999	__cfduid	d863567ac4dd9d594442ba14795d53b8b1532357405
+
