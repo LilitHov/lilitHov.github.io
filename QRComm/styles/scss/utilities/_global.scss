@@ -142,15 +142,16 @@ body {
   padding: 5px;
   display: none;
   position: absolute;
-  top: 25px;
+  top: 30px;
+  right: 15px;
+
+  &:hover {
+    color: rgba(white,0.8);
+  }
 }
 
 .hamburger {
-  color: $color-secondary;
-
-  &:hover {
-    color: $color-primary;
-  }
+  color: white;
 
   &.hide {
     display: none;
@@ -161,10 +162,6 @@ body {
   position: absolute;
   z-index: 2;
   color: white;
-
-  &:hover {
-    color: rgba(white, 0.8);
-  }
 
   &.show {
     display: inline-block;

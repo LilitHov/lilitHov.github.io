@@ -1,6 +1,5 @@
 @media (max-width: 1200px) {
   .main-cardholder {
-    position: relative;
     display: block;
     padding-top: 85px;
 
@@ -24,6 +23,7 @@
 
 @media (max-width: 530px) {
   .main-cardholder {
+    padding-top: 35px;
 
     .card-holder-form {
 

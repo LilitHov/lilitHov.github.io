@@ -157,12 +157,13 @@ body {
   padding: 5px;
   display: none;
   position: absolute;
-  top: 25px; }
+  top: 30px;
+  right: 15px; }
+  .hamburger:hover, .close:hover {
+    color: rgba(255, 255, 255, 0.8); }
 
 .hamburger {
-  color: #666668; }
-  .hamburger:hover {
-    color: #1f74ce; }
+  color: white; }
   .hamburger.hide {
     display: none; }
 
@@ -170,8 +171,6 @@ body {
   position: absolute;
   z-index: 2;
   color: white; }
-  .close:hover {
-    color: rgba(255, 255, 255, 0.8); }
   .close.show {
     display: inline-block; }
 
@@ -3146,7 +3145,9 @@ footer {
     background-position: center;
     transition: all 0.2s ease-in-out; }
     aside.left-sidebar.aside-nav.show {
-      transform: translateX(0); }
+      transform: translateX(-50%);
+      left: 50%;
+      width: 95%; }
   aside.right-sidebar {
     min-height: calc(100vh - 250px);
     width: 100%; } }
@@ -3216,7 +3217,6 @@ footer {
       padding: 50px 0 20px; } }
 @media (max-width: 1200px) {
   .main-cardholder {
-    position: relative;
     display: block;
     padding-top: 85px; }
     .main-cardholder aside.right-sidebar {
@@ -3224,25 +3224,27 @@ footer {
     .main-cardholder .card-holder-form form .form-group {
       width: 45%; } }
 @media (max-width: 530px) {
-  .main-cardholder .card-holder-form form .form-group {
-    width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px; }
-    .main-cardholder .card-holder-form form .form-group:first-child {
-      margin-top: 0; }
-    .main-cardholder .card-holder-form form .form-group .form-input {
-      max-width: none; }
-  .main-cardholder .card-holder-form form .file-upload {
-    margin: 0;
-    width: 100%; }
-    .main-cardholder .card-holder-form form .file-upload li {
-      margin: 5px 0;
+  .main-cardholder {
+    padding-top: 35px; }
+    .main-cardholder .card-holder-form form .form-group {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+      .main-cardholder .card-holder-form form .form-group:first-child {
+        margin-top: 0; }
+      .main-cardholder .card-holder-form form .form-group .form-input {
+        max-width: none; }
+    .main-cardholder .card-holder-form form .file-upload {
+      margin: 0;
       width: 100%; }
-      .main-cardholder .card-holder-form form .file-upload li .file-label {
-        margin: 0 auto; }
-  .main-cardholder .card-holder-form form .form-textarea {
-    margin-top: 20px;
-    margin-bottom: 20px; } }
+      .main-cardholder .card-holder-form form .file-upload li {
+        margin: 5px 0;
+        width: 100%; }
+        .main-cardholder .card-holder-form form .file-upload li .file-label {
+          margin: 0 auto; }
+    .main-cardholder .card-holder-form form .form-textarea {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
 @media (max-width: 420px) {
   .card-btn {
     -ms-flex-wrap: wrap;
