@@ -1,0 +1,90 @@
+.table {
+  table-layout: fixed;
+  font-family: $font-secondary;
+  width: 100%;
+
+}
+
+thead {
+  background: #f7f7f7;
+  color: rgba(#212121, 0.5);
+
+  th {
+    padding: 25px 10px;
+    border: 1px solid #ebebeb;
+  }
+}
+
+tbody {
+  font-size: $font-size-sm;
+  color: #2a2a2a;
+
+  td {
+    padding: 25px 25px 25px 30px;
+    border: 1px solid #ebebeb;
+
+
+    &:last-child {
+     padding: 25px 10px;
+      text-align: center;
+    }
+
+    .tool {
+      position: relative;
+
+      .tooltip {
+        @include ellipsis;
+        color: $color-dark;
+        font-family: $font-secondary;
+
+        a {
+          color: $color-primary;
+          font-size: $font-size-sm;
+          font-family: $font-primary;
+          transition: $transition-xs;
+          text-decoration: underline;
+
+          &:hover {
+            color: lighten($color-primary, 20%);
+          }
+        }
+      }
+
+      .tooltip-text {
+        background: #000000;
+        font-family: $font-secondary;
+        font-size: $font-size-xs;
+        text-align: center;
+        padding: 10px;
+        line-height: 15px;
+        border-radius: $radius-sm;
+        color: white;
+        position: absolute;
+        width: 150px;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: $transition-xs;
+        visibility: hidden;
+        opacity: 0;
+
+        &:after {
+          content: '';
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 100%);
+          border: 8px solid transparent;
+          border-top-color: black;
+          position: absolute;
+          visibility: visible;
+          opacity: 1;
+        }
+
+        &.show {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

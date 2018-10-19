@@ -1,0 +1,60 @@
+.btn {
+  border-radius: $radius-sm;
+  font-family: $font-bold;
+  text-transform: uppercase;
+  box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.35);
+  text-align: center;
+  cursor: pointer;
+  height: 45px;
+  width: 100%;
+  white-space: nowrap;
+  transition: $transition-xs;
+  font-size: $font-size-base;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  &:hover {
+    box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.6);
+  }
+
+  &.filled {
+    background: $color-primary;
+    border: none;
+    color: #ffffff;
+    line-height: 45px;
+  }
+
+  &.outline {
+    background: none;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    line-height: 43px;
+  }
+
+  &.link {
+    background: #ffffff;
+    color: $color-primary;
+    border: none;
+    line-height: 45px;
+  }
+
+  &.disable {
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &.w-sm {
+    max-width: 217px;
+  }
+
+  &.w-md {
+    max-width: 335px;
+  }
+}
+
+@each $key, $value in $button-background {
+  .btn-#{$key} {
+    background: $value;
+  }
+}

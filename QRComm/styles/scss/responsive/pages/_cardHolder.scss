@@ -1,0 +1,80 @@
+@media (max-width: 1200px) {
+  .main-cardholder {
+    position: relative;
+    display: block;
+    padding-top: 85px;
+
+    aside {
+
+      &.right-sidebar {
+        min-height: calc(100vh - 287px);
+      }
+    }
+
+    .card-holder-form {
+
+      form {
+        .form-group {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .main-cardholder {
+
+    .card-holder-form {
+
+      form {
+        .form-group {
+          width: 100%;
+          margin-bottom: 20px;
+          margin-top: 20px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          .form-input {
+            max-width: none;
+          }
+        }
+
+        .file-upload {
+          margin: 0;
+          width: 100%;
+
+          li {
+            margin: 5px 0;
+            width: 100%;
+
+            .file-label {
+              margin: 0 auto;
+            }
+          }
+        }
+
+        .form-textarea {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .card-btn {
+    @include flex-wrap;
+
+    .btn {
+      &.w-sm, &.w-md {
+        max-width: none;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+

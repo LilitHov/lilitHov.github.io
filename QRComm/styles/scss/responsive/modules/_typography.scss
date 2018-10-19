@@ -1,0 +1,11 @@
+@media (max-width: 530px) {
+  @each $key, $value in $heading-font-sizes {
+    #{$key} {
+      font-size: round($value/1.2);
+      font-family: $font-extraBold;
+      text-transform: uppercase;
+      color: $color-secondary;
+    }
+  }
+
+}

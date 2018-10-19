@@ -1,0 +1,94 @@
+//fonts path
+$fonts-folder: '../../fonts';
+
+//font-families
+$font-primary: 'OpenSans SemiBold';
+$font-secondary: 'OpenSans Regular';
+$font-bold: 'OpenSans Bold';
+$font-extraBold: 'OpenSans ExtraBold';
+
+//font-sizes
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+
+// base font size
+
+$font-size-base: $font-size-md;
+
+//headings
+//colors
+$color-primary: #1f74ce;
+$color-secondary: #666668;
+$color-blue: #1f88d2;
+$color-dark: #2a2a2a;
+
+//form colors
+$input-color: #747474;
+$input-border-color: #e0dfdf;
+$area-border-color: #b7b7b7;
+$holder-color: #b7b7b7;
+$holder-color-focus: rgba(42, 42, 42, 0.8);
+
+//transitions
+$transition-xs: all .2s ease-in-out;
+$transition-sm: all .4s ease-in-out;
+
+//radiuses
+$radius-sm: 6px;
+$radius-xs: 4px;
+
+
+//heading font sizes
+$h-xs: 14px;
+$h-sm: 16px;
+$h-md: 18px;
+$h-lg: 20px;
+$h-xl: 22px;
+$h-xxl: 30px;
+
+$heading-font-sizes: (
+        h6:$h-xs,
+        h5:$h-sm,
+        h4:$h-md,
+        h3:$h-lg,
+        h2:$h-xl,
+        h1:$h-xxl
+);
+
+//button colors
+$bg-info: #17A2B8;
+$bg-danger: #DC3545;
+$bg-warning: #FFC107;
+$bg-success: #28A745;
+$bg-dark: #343A40;
+
+$button-background: (
+  info: $bg-info,
+  danger: $bg-danger,
+  warning: $bg-danger,
+  success: $bg-success,
+  dark: $bg-dark,
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

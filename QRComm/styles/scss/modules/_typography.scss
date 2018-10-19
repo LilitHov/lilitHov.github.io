@@ -1,0 +1,26 @@
+.text-center {
+  text-align: center;
+}
+
+.link-underline {
+  border-bottom: 1px solid #5696da;
+}
+
+.error-msg {
+  color: red;
+  font-size: $font-size-xs;
+  font-family: $font-secondary;
+}
+
+.ellipsis {
+  @include ellipsis;
+}
+
+@each $key, $value in $heading-font-sizes {
+  #{$key} {
+    font-size: $value;
+    font-family: $font-extraBold;
+    text-transform: uppercase;
+    color: $color-secondary;
+  }
+}

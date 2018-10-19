@@ -1,0 +1,168 @@
+.form-group {
+  position: relative;
+}
+
+.label {
+  color: $holder-color;
+  pointer-events: none;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  transition: $transition-xs;
+
+  &.floating {
+    top: -18px;
+    font-size: 14px;
+    color: $holder-color-focus;
+  }
+
+  &.label-light {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.form-input {
+  font-size: $font-size-base;
+  font-family: $font-primary;
+  color: $color-secondary;
+  width: 100%;
+  height: 50px;
+  line-height: 49px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $input-border-color;
+  padding: 0 5px;
+
+  &:focus {
+    outline: none;
+    line-height: 48px;
+    border-bottom: 2px solid $color-dark;
+    color: $color-dark;
+  }
+
+  &.w-sm {
+    max-width: 335px;
+  }
+
+  &.w-md {
+    max-width: 375px;
+  }
+
+  &.border-light {
+    border-color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.5);
+
+    &:focus {
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+  }
+}
+
+.form-textarea {
+
+  margin-bottom: 60px;
+
+  label {
+    color: $holder-color;
+    pointer-events: none;
+  }
+
+  textarea {
+    margin-top: 15px;
+    resize: none;
+    font-family: $font-primary;
+    font-size: $font-size-base;
+    color: $color-dark;
+    padding: 18px;
+    line-height: 20px;
+    border-radius: $radius-xs;
+    min-height: 160px;
+    width: 100%;
+
+    &:focus {
+      border-color: $color-dark;
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #b7b7b7;
+      font-family: $font-primary;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #b7b7b7;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #b7b7b7;
+    }
+
+    &:-ms-input-placeholder {
+      color: #b7b7b7;
+    }
+  }
+}
+
+.file-upload {
+  margin: -10px;
+
+  li {
+    margin: 10px;
+
+    .file-label {
+      @include flex;
+      @include align-center;
+      @include flex-shrink(0);
+
+      color: #4c90d8;
+      width: 110px;
+      height: 110px;
+      border: 2px solid rgba(#1f74ce, 0.8);
+      padding: 0 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: $transition-xs;
+
+      &:hover {
+        color: $font-primary;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    &.user-photo {
+      @include bg-img-props(center);
+      width: 110px;
+      height: 110px;
+      position: relative;
+      transition: $transition-xs;
+
+     .overlay {
+       height: 100%;
+       background: rgba(black, 0.5);
+       visibility: hidden;
+       opacity: 0;
+
+       i{
+         color: white;
+         font-size: 14px;
+         position: absolute;
+         right: 10px;
+         top: 10px;
+         cursor: pointer;
+         padding: 5px;
+         transition: $transition-sm;
+
+         &:hover {
+           transform: rotate(90deg);
+         }
+       }
+     }
+
+      &:hover .overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
