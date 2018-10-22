@@ -21,18 +21,18 @@
   }
   aside {
     &.left-sidebar.aside-nav {
-      transform: translateX(-300px);
+      transform: translateX(-2000px);
       margin-right: 0;
       position: absolute;
       z-index: 2;
       min-height: calc(100vh - 287px);
       background-position: center;
       transition: $transition-xs;
+      width: 100%;
 
       &.show {
         transform: translateX(-50%);
         left: 50%;
-        width: 95%;
 
       }
     }

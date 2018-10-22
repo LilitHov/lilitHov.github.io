@@ -5,6 +5,7 @@ aside {
   .title {
         @include flex;
         @include align-center;
+        @include flex-wrap;
         padding: 0 30px;
         height: 90px;
 
@@ -45,9 +46,7 @@ aside {
       min-height: calc(100vh - 250px);
 
       .nav-link {
-
         li {
-
           a {
             display: block;
             padding: 20px 30px;
@@ -67,6 +66,4 @@ aside {
         }
       }
     }
-
   }
-

@@ -2,12 +2,40 @@
   .main-location {
     position: relative;
     display: block;
-    padding-top: 85px;
 
     aside {
 
       &.right-sidebar {
-        min-height: calc(100vh - 287px);
+        min-height: calc(100vh - 215px);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 530px) {
+  .main-location {
+    aside {
+
+      &.right-sidebar {
+        padding-top: 15px;
+
+        .title {
+          margin-bottom: 20px;
+
+          h2 {
+            width: 100%;
+          }
+
+          a {
+            width: 100%;
+            font-size: 16px;
+
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
       }
     }
   }

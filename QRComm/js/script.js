@@ -6,11 +6,16 @@ $(document).ready(function () {
 
     });
 
-
     $('.select2').on('select2:selecting', function (e) {
         let label = this.parentElement.querySelector('.label');
         label.classList.add('floating');
     });
+
+    // mCustomScrollbar
+    $(".mscrollbar").mCustomScrollbar({
+        axis: "x",
+    });
+
 
     // Tooltip
     var toolTitle = document.querySelectorAll('.tool-title');
@@ -79,7 +84,7 @@ $(document).ready(function () {
         label.classList.remove('floating');
     }
 
-    // hamburger
+    // aside menu
     var leftAside = document.querySelectorAll('.left-sidebar')[0];
     var body = document.getElementsByTagName('body')[0];
     var close = document.querySelectorAll('.close')[0];
@@ -92,15 +97,11 @@ $(document).ready(function () {
         close.classList.add('show');
     };
 
-
     close.onclick = function () {
         hamburger.classList.remove('hide');
         body.classList.remove('layer');
         leftAside.classList.remove('show');
         close.classList.remove('show');
-    }
-
-
-
+    };
 });
 
