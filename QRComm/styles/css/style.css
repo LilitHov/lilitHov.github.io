@@ -157,7 +157,7 @@ body {
   padding: 5px;
   display: none;
   position: absolute;
-  top: 30px;
+  top: 15px;
   right: 15px; }
   .hamburger:hover, .close:hover {
     color: rgba(255, 255, 255, 0.8); }
@@ -3121,6 +3121,13 @@ footer {
   .hamburger {
     display: inline-block; } }
 @media (max-width: 1200px) {
+  header .header-content {
+    height: 60px;
+    line-height: 60px; } }
+@media (max-width: 487px) {
+  header .header-content .logo {
+    height: 30px; } }
+@media (max-width: 1200px) {
   body.layer {
     transition: all 0.4s ease-in-out;
     overflow: hidden; }
@@ -3217,8 +3224,7 @@ footer {
       padding: 50px 0 20px; } }
 @media (max-width: 1200px) {
   .main-cardholder {
-    display: block;
-    padding-top: 85px; }
+    display: block; }
     .main-cardholder aside.right-sidebar {
       min-height: calc(100vh - 287px); }
     .main-cardholder .card-holder-form form .form-group {
@@ -3235,7 +3241,7 @@ footer {
       .main-cardholder .card-holder-form form .form-group .form-input {
         max-width: none; }
     .main-cardholder .card-holder-form form .file-upload {
-      margin: 0;
+      margin: 30px 0;
       width: 100%; }
       .main-cardholder .card-holder-form form .file-upload li {
         margin: 5px 0;
